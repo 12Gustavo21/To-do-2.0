@@ -3,8 +3,8 @@ import * as S from "./style"
 
 export default function main() {
   return (
-    <div id='main'>
+    <S.Main id='main'>
       main
-    </div>
+    </S.Main>
   )
 }

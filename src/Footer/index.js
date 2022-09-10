@@ -3,8 +3,8 @@ import * as S from './style'
 
 export default function footer() {
   return (
-    <div>
+    <S.Footer>
       Footer
-    </div>
+    </S.Footer>
   )
 }
