@@ -1,5 +1,5 @@
 import React from 'react'
-import * as S from "../styles/main-style"
+import * as S from "./style"
 
 export default function main() {
   return (

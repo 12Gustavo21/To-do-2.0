@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from './components/header'
-import Main from './components/main'
-import Footer from './components/footer'
-import {GlobalStyle} from './styles/global-style'
+import Header from './Header/index'
+import Main from './Main/index'
+import Footer from './Footer/index'
+import { GlobalStyle } from './Global/style'
 
 export default function App() {
   return (
