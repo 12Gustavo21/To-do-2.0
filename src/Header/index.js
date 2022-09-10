@@ -2,7 +2,7 @@ import React from 'react'
 import * as S from "./style"
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
 
-export default function header() {
+export default function index() {
   return (
     <S.Header>
       <S.Box1>
