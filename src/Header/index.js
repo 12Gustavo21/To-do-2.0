@@ -9,8 +9,8 @@ export default function header() {
         <S.H1>TO DO LIST</S.H1>
       </S.Box1>
       <S.Box2>
-        <BsFillArrowDownCircleFill color='white' size='2em' />
-        <S.H2>Go down</S.H2>
+        <a href='#main'> <BsFillArrowDownCircleFill color='white' size='2em' /> </a>
+        <a href='#main'> <S.H2>Go down</S.H2> </a>
       </S.Box2>
     </S.Header>
   )

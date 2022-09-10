@@ -3,7 +3,7 @@ import * as S from "./style"
 
 export default function main() {
   return (
-    <div>
+    <div id='main'>
       main
     </div>
   )

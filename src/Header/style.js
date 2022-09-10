@@ -47,6 +47,10 @@ export const H1 = styled.h1`
         color: rgb(174, 0, 255); filter: drop-shadow(5px 4px 5px rgb(174, 0, 255));
       }
     }
+
+    @media (max-width: 425px) {
+      font-size: 3em;
+    }
 `;
 
 export const Box2 = styled.div`
@@ -56,9 +60,19 @@ export const Box2 = styled.div`
     align-items: flex-end;
     justify-content: flex-start;
     padding-left: 30px;
+
+    a {
+      transition: 1s all;
+
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
 `;
 
 export const H2 = styled.h2`
   padding-left: 10px;
   font-size: 2em;
+  color: #fff;
+  filter: drop-shadow(2px 4px 6px black);
 `;
