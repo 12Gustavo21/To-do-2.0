@@ -29,30 +29,34 @@ export default function Index() {
   return (
     <S.Main id='main'>
       <S.Box1>
-        <form onSubmit={(e) => e.preventDefault()}>
-          <input
-            placeholder='Add a task'
-            value={input}
-            onChange={(e) => {
-              setInput(e.target.value);
-            }}
-          />
-          <button onClick={() => { add() }}>Add</button>
-          <button onClick={() => { deleteAll() }}>Delete all</button>
-        </form>
+          <form onSubmit={(e) => e.preventDefault()}>
+            <input
+              placeholder='Add a task'
+              value={input}
+              onChange={(e) => {
+                setInput(e.target.value);
+              }}
+            />
+            <S.Buttons>
+              <button onClick={() => { add() }}>Add</button>
+              <button onClick={() => { deleteAll() }}>Delete all</button>            
+            </S.Buttons>
+          </form>
         <ul>
           {list.map((item, id) => (
-            <div>
+            <S.Task>
               <S.Li>{item}</S.Li>
-              <input type='checkbox' />
-              <button onClick={() => deleteItem(id)}>Delete</button>
-            </div>
+              <S.Div>
+                <input type='checkbox' />
+                <button onClick={() => deleteItem(id)}>Delete</button>
+              </S.Div>
+            </S.Task>
           ))}
         </ul>
       </S.Box1>
-      <figure>
+      <S.Figure>
         <img src={Cat} alt='cute cat on top of a heart' />
-      </figure>
+      </S.Figure>
 
     </S.Main>
   )

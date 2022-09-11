@@ -4,7 +4,7 @@ import { BsFillArrowDownCircleFill } from "react-icons/bs";
 
 export default function index() {
   return (
-    <S.Header>
+    <S.Header id='top'>
       <S.Box1>
         <S.H1>TO DO LIST</S.H1>
       </S.Box1>
