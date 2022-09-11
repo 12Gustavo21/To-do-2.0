@@ -5,6 +5,7 @@ export const Main = styled.main`
     width: 100%;
     height: 100vh;
     display: flex;
+    font-family: 'Merriweather', serif;
 `;
 
 export const Box1 = styled.div`
@@ -17,7 +18,7 @@ export const Box1 = styled.div`
         display: flex;
 
         input {
-            padding: 5px;
+            padding: 10px;
             outline: none;
             border: none;
             border-radius: 10px;
@@ -25,10 +26,12 @@ export const Box1 = styled.div`
             width: 60%;
             color: #fff;
             font-size: 1.5em;
+            font-family: 'Merriweather', serif;
 
             &::placeholder {
                 color: #fff;
                 font-size: 1em;
+                font-family: 'Merriweather', serif;
             }
         }
     }
@@ -47,6 +50,12 @@ export const Buttons = styled.div`
         margin: 10px;
         font-size: 1.5em;
         cursor: pointer;
+        font-family: 'Merriweather', serif;
+        transition: 1s all;
+
+        &:hover {
+            transform: scale(.9);
+        }
     }
 `;
 
@@ -54,24 +63,46 @@ export const Task = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+    margin: 20px;
 `;
 
 export const Li = styled.li`
+    font-size: 1.5em;
     color: #fff;
     border-bottom: 2px solid #FA96D5;    
 `;
 
 export const Div = styled.div`
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
     input {
-        accent-color: #FA96D5;
+        width: 30px;
+        height: 30px;
         cursor: pointer;
+        accent-color: #FA96D5;
     }
 
     button {
+        background: none;
+        border: 2px solid #FA96D5;
+        color: #FA96D5;
+        padding: 5px;
+        font-size: 1em;
+        width: 100px;
+        height: 5vh;
         cursor: pointer;
+        transition: 1s all;
+
+        &:hover {
+            background-color: #FA96D5;
+            color: #fff;
+            transform: scale(1.05);
+        }
     }
-`; 
+`;
 
 export const Figure = styled.figure`
     display: flex;

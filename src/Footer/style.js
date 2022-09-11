@@ -19,6 +19,11 @@ export const Box1 = styled.div`
         padding: 10px;
         font-size: 1.5em;
         filter: drop-shadow(2px 4px 6px black);
+        transition: 1s all;
+
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 `;
 
