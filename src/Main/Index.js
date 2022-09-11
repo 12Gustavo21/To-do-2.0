@@ -19,9 +19,16 @@ export default function Index() {
     setInput("")
   }
 
+  const deleteItem = (id) => {
+    let newList = [...list]
+    newList.splice(id, 1)
+
+    setList(newList)
+  }
+
   return (
     <S.Main id='main'>
-      <div>
+      <S.Box1>
         <form onSubmit={(e) => e.preventDefault()}>
           <input
             placeholder='Add a task'
@@ -31,19 +38,21 @@ export default function Index() {
             }}
           />
           <button onClick={() => { add() }}>Add</button>
-          <button onClick={() => { deleteAll() } }>Delete all</button>
+          <button onClick={() => { deleteAll() }}>Delete all</button>
         </form>
         <ul>
-          {list.map((item) => (
+          {list.map((item, id) => (
             <div>
-              <li>{item}</li>
+              <S.Li>{item}</S.Li>
               <input type='checkbox' />
-              <button>Finished</button>
+              <button onClick={() => deleteItem(id)}>Delete</button>
             </div>
           ))}
         </ul>
-      </div>
-      <div> <img src={Cat} alt='cute cat on top of a heart' /> </div>
+      </S.Box1>
+      <figure>
+        <img src={Cat} alt='cute cat on top of a heart' />
+      </figure>
 
     </S.Main>
   )
