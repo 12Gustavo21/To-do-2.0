@@ -33,6 +33,14 @@ export const Box1 = styled.div`
                 font-size: 1em;
                 font-family: 'Merriweather', serif;
             }
+
+            @media (max-width: 800px) {
+                width: 70%;
+            }
+        }
+
+        @media(max-width: 855px) {
+            flex-direction: column;
         }
     }
 `;
@@ -55,6 +63,12 @@ export const Buttons = styled.div`
 
         &:hover {
             transform: scale(.9);
+        }
+
+        @media (max-width: 855px) {
+            margin: 10px 10px 0 0;
+            font-size: 1.2em;
+            width: 130px;
         }
     }
 `;
@@ -79,10 +93,14 @@ export const Div = styled.div`
     align-items: center;
 
     input {
-        width: 30px;
-        height: 30px;
+        width: 2em;
+        height: 2em;
         cursor: pointer;
         accent-color: #FA96D5;
+
+        @media (max-width: 1100px) {
+            margin-right: .5em;
+        }
     }
 
     button {
@@ -110,6 +128,13 @@ export const Figure = styled.figure`
     align-items: center;
 
     img {
+        min-width: 100%;
+        min-height: 50vh;
         margin-right: 30px;
+
+        @media (max-width: 810px) {
+            max-width: 90%;
+            min-height: 40vh;
+        }
     }
 `;
